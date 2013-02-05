@@ -1,5 +1,5 @@
 ---
-abstract: 'Lingua::SWE::Num2Word is module for converting numbers into their representation in Swedish. Converts whole numbers from 0 up to 999 999 999.'
+abstract: 'Number 2 word conversion in SWE.'
 author:
   - 'PetaMem s.r.o. <info@petamem.com>'
 build_requires:
@@ -19,4 +19,4 @@ requires:
   encoding: 0
   strict: 0
   warnings: 0
-version: 0.044
+version: 0.0577

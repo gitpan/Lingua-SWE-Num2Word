@@ -1,7 +1,7 @@
 # For Emacs: -*- mode:cperl; mode:folding; -*-
 
 package Lingua::SWE::Num2Word;
-# ABSTRACT: Lingua::SWE::Num2Word is module for converting numbers into their representation in Swedish. Converts whole numbers from 0 up to 999 999 999.
+# ABSTRACT: Number 2 word conversion in SWE.
 
 # {{{ use block
 
@@ -14,8 +14,7 @@ use encoding 'utf8';
 # }}}
 # {{{ variables declaration
 
-my($ver)      = ('$Rev: 440 $' =~ m{(\d+)}xms);
-our $VERSION = $ver / 10_000;
+our $VERSION = 0.0577;
 
 # }}}
 # {{{ num2sv_cardinal                 convert number to text
@@ -81,12 +80,12 @@ Lingua::SWE::Num2Word
 
 =head1 VERSION
 
-version 0.044
+version 0.0577
 
 positive number to text convertor for Swedish.
 Output text is encoded in utf-8 encoding.
 
-=head2 $Rev: 440 $
+=head2 $Rev: 577 $
 
 ISO 639-3 namespace.
 
@@ -99,6 +98,8 @@ ISO 639-3 namespace.
  print $text || "sorry, can't convert this number into swedish language.";
 
 =head1 DESCRIPTION
+
+Number 2 word conversion in SWE.
 
 Lingua::SWE::Num2Word is module for converting numbers into their representation
 in Swedish. Converts whole numbers from 0 up to 999 999 999.

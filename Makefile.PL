@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Lingua::SWE::Num2Word is module for converting numbers into their representation in Swedish. Converts whole numbers from 0 up to 999 999 999.",
+  "ABSTRACT" => "Number 2 word conversion in SWE.",
   "AUTHOR" => "PetaMem s.r.o. <info\@petamem.com>",
   "BUILD_REQUIRES" => {
     "Test::More" => 0,
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.044",
+  "VERSION" => "0.0577",
   "test" => {
     "TESTS" => "t/*.t"
   }
