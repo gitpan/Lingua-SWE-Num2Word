@@ -5,6 +5,8 @@ package Lingua::SWE::Num2Word;
 
 # {{{ use block
 
+use 5.10.1;
+
 use strict;
 use warnings;
 
@@ -14,15 +16,15 @@ use encoding 'utf8';
 # }}}
 # {{{ variables declaration
 
-our $VERSION = 0.0577;
+our $VERSION = 0.0682;
 
 # }}}
 # {{{ num2sv_cardinal                 convert number to text
 
 sub num2sv_cardinal :Export {
-  my $positive = shift;
+  my $positive = shift // return 'noll';
 
-  return if ($positive<0);
+  return if ($positive < 0);
 
   my $out;
   my @tokens1  = qw(noll ett två tre fyra fem sex sju åtta nio tio elva
@@ -80,12 +82,12 @@ Lingua::SWE::Num2Word
 
 =head1 VERSION
 
-version 0.0577
+version 0.0682
 
 positive number to text convertor for Swedish.
 Output text is encoded in utf-8 encoding.
 
-=head2 $Rev: 577 $
+=head2 $Rev: 682 $
 
 ISO 639-3 namespace.
 

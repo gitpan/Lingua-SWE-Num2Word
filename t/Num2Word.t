@@ -41,7 +41,7 @@ my $nw = [
         '9999 in SWE',
     ],
     [
-        'nonexisting',
+        '0.33',
         'noll',
         'nonexisting number -> 0',
     ],
